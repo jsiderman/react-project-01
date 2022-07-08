@@ -1,0 +1,19 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
