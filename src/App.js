@@ -24,6 +24,7 @@ const App = () => {
       return monster.name.toLocaleLowerCase().includes(searchField);
     });
     setFilteredMonsters(newFilteredMonsters);
+    console.log('effect');
   }, [monsters, searchField]);
 
   const onSearchChange = (event) => {
@@ -39,7 +40,7 @@ const App = () => {
         placeholder='Search names'
         className='monsters-search-box'
       />
-      <CardList monsters={monsters} />
+      <CardList monsters={filteredMonsters} />
     </div>
   );
 };
