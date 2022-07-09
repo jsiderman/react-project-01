@@ -1,16 +1,18 @@
 // import { Component } from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 //import logo from "./logo.svg";
-import CardList from "./components/card-list/card-list.component";
-import SearchBox from "./components/search-box/search-box.component";
-import "./App.css";
+import CardList from './components/card-list/card-list.component';
+import SearchBox from './components/search-box/search-box.component';
+import './App.css';
 
 const App = () => {
-  const [searchField, setSearchField] = useState("");
+  const [searchField, setSearchField] = useState('');
   const [monsters, setMonsters] = useState([]);
 
-  console.log("render");
+  console.log('render');
+
+  useEffect(() => {}, []);
 
   // fetch("https://jsonplaceholder.typicode.com/users")
   //   .then((response) => response.json())
@@ -22,12 +24,12 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <h1 className="app-title">Search for Cats</h1>
+    <div className='App'>
+      <h1 className='app-title'>Search for Cats</h1>
       <SearchBox
         onChangeHandler={onSearchChange}
-        placeholder="Search names"
-        className="monsters-search-box"
+        placeholder='Search names'
+        className='monsters-search-box'
       />
       <CardList monsters={monsters} />
     </div>
