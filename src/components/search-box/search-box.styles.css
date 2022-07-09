@@ -1,5 +1,8 @@
 .search-box {
-    margin: 0 auto 60px;
-    display: flex;
-    align-items: center;
+  margin: 0 auto 60px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  font-size: 16px;
+  padding: 14px;
 }
