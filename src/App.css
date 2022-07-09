@@ -1,7 +1,8 @@
 body {
   background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
-    animation: animate 1.2s linear infinite;
-    font-family: 'Roboto', sans-serif;
+  animation: animate 1.2s linear infinite;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 .App {
